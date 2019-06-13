@@ -1298,7 +1298,7 @@ class MusicBot(discord.Client):
             )
         return True
 
-    async def cmd_play(self, message, player, channel, author, permissions, leftover_args, song_url):
+    async def cmd_p(self, message, player, channel, author, permissions, leftover_args, song_url):
         """
         Usage:
             {command_prefix}play song_link
@@ -2044,7 +2044,7 @@ class MusicBot(discord.Client):
                 self.str.get('cmd-remove-noperms', "You do not have the valid permissions to remove that entry from the queue, make sure you're the one who queued it or have instant skip permissions"), expire_in=20
             )
 
-    async def cmd_skip(self, player, channel, author, message, permissions, voice_channel, param=''):
+    async def cmd_s(self, player, channel, author, message, permissions, voice_channel, param=''):
         """
         Usage:
             {command_prefix}skip [force/f]
